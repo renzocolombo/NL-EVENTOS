@@ -522,10 +522,15 @@ footer {
 
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: var(--accent-gold);
+        display: none !important;
+    }
+
+    nav {
+        justify-content: center !important;
+    }
+
+    .nav-container {
+        padding: 0;
     }
 
     .nav-links {
