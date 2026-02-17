@@ -481,10 +481,12 @@ footer {
     justify-content: center;
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white !important;
-    border-radius: 4px;
-    /* Más cuadrado */
+    border-radius: 12px;
+    /* Bordes más redondeados */
     font-size: 1.6rem;
     transition: var(--transition-smooth);
+    filter: brightness(1.1);
+    /* Un toque más brillante */
 }
 
 .instagram-link:hover {
