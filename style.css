@@ -268,22 +268,20 @@ nav {
 /* Services Section */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     margin-top: 50px;
 }
 
-.services-dual {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+.triple-grid {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .service-card {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    height: 450px;
+    height: 400px;
 }
 
 .service-img {
@@ -298,7 +296,7 @@ nav {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 40px;
+    padding: 30px;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
     z-index: 2;
 }
@@ -308,13 +306,13 @@ nav {
 }
 
 .service-overlay h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .service-overlay p {
     color: var(--text-secondary);
-    font-size: 1rem;
+    font-size: 0.9rem;
     opacity: 0;
     transform: translateY(20px);
     transition: var(--transition-smooth);
@@ -448,10 +446,17 @@ footer {
     color: var(--text-muted);
 }
 
+@media (max-width: 1024px) {
+    .triple-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 768px) {
 
     .contact-grid,
-    .services-dual {
+    .services-grid,
+    .triple-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
