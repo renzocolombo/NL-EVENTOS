@@ -348,8 +348,9 @@ nav {
 /* Packages Section */
 .packages-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    /* Forzar 3 columnas en desktop */
+    gap: 20px;
 }
 
 .package-card {
@@ -503,7 +504,9 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .triple-grid {
+
+    .triple-grid,
+    .packages-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -549,8 +552,9 @@ footer {
 
     .contact-grid,
     .services-grid,
+    .packages-grid,
     .triple-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 40px;
     }
 
