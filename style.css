@@ -273,9 +273,6 @@ nav {
     margin-top: 50px;
 }
 
-.triple-grid {
-    grid-template-columns: repeat(3, 1fr);
-}
 
 .service-card {
     position: relative;
