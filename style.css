@@ -353,39 +353,41 @@ nav {
 }
 
 .package-card {
-    padding: 30px 20px;
+    padding: 20px 15px;
     /* Más compacto */
     text-align: center;
     border-radius: 12px;
     transition: var(--transition-smooth);
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
+    min-height: 380px;
+    /* Altura controlada */
 }
 
 .package-card:hover {
     background: var(--bg-card);
-    transform: translateY(-8px);
-    /* Menos desplazamiento al hover */
+    transform: translateY(-5px);
     border-color: var(--accent-gold);
 }
 
 .package-card h3 {
-    font-size: 1.6rem;
-    /* Un poco más pequeño */
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    /* Más pequeño */
+    margin-bottom: 10px;
     color: var(--accent-gold);
 }
 
 .package-card ul {
-    margin: 15px 0;
-    /* Menos margen vertical */
+    margin: 10px 0;
     flex-grow: 1;
 }
 
 .package-card ul li {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    /* Espaciado mínimo */
     color: var(--text-secondary);
+    font-size: 0.95rem;
 }
 
 /* Authority Section */
