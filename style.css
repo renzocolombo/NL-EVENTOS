@@ -357,6 +357,10 @@ nav {
     text-align: center;
     border-radius: 12px;
     transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Asegurar que todas las tarjetas tengan la misma altura */
 }
 
 .package-card:hover {
@@ -373,6 +377,8 @@ nav {
 
 .package-card ul {
     margin: 30px 0;
+    flex-grow: 1;
+    /* Esto empuja el botón hacia abajo */
 }
 
 .package-card ul li {
