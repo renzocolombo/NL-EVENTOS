@@ -162,15 +162,16 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 20px 0;
+    padding: 10px 0;
     transition: var(--transition-smooth);
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
 }
 
 header.scrolled {
-    background: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(20px);
-    padding: 15px 0;
-    border-bottom: 1px solid var(--border-color);
+    padding: 5px 0;
 }
 
 nav {
@@ -185,17 +186,17 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 75px;
     width: auto;
     transition: var(--transition-smooth);
 }
 
 .logo img:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 header.scrolled .logo img {
-    height: 45px;
+    height: 65px;
 }
 
 .nav-links {
@@ -574,7 +575,7 @@ footer {
     }
 
     .logo img {
-        height: 40px;
+        height: 55px;
     }
 }
 
