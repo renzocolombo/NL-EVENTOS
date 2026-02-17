@@ -291,6 +291,18 @@ nav {
     transition: var(--transition-smooth);
 }
 
+.img-tunel {
+    object-position: 0% center;
+}
+
+.img-plataforma {
+    object-position: 50% center;
+}
+
+.img-robot {
+    object-position: 100% center;
+}
+
 .service-overlay {
     position: absolute;
     bottom: 0;
