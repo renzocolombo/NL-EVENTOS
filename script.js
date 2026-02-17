@@ -38,12 +38,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.querySelector('i').classList.toggle('fa-bars');
+        menuToggle.querySelector('i').classList.toggle('fa-times');
+    });
+}
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        if (menuToggle) {
+            menuToggle.querySelector('i').classList.add('fa-bars');
+            menuToggle.querySelector('i').classList.remove('fa-times');
+        }
+    });
+});
+
 // Form Handling
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Gracias por tu mensaje. El equipo de NL Eventos se pondrá en contacto pronto.');
-        contactForm.reset();
+        // En este caso, dejamos que el action="mailto:..." funcione, 
+        // pero podemos mostrar un aviso.
+        alert('Se abrirá tu gestor de correo para enviar la consulta. ¡Gracias!');
+        // No prevenimos el default para que se dispare el mailto, 
+        // a menos que sea un sistema de backend real.
     });
 }
