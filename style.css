@@ -449,7 +449,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .contact-grid {
+
+    .contact-grid,
+    .services-dual {
         grid-template-columns: 1fr;
         gap: 40px;
     }
