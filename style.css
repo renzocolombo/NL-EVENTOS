@@ -268,7 +268,8 @@ nav {
 /* Services Section */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    /* Forzar 4 columnas en desktop */
     gap: 30px;
     margin-top: 50px;
 }
