@@ -512,6 +512,26 @@ footer {
     box-shadow: 0 5px 15px rgba(214, 36, 159, 0.4);
 }
 
+.tiktok-link {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: white !important;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    transition: var(--transition-smooth);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tiktok-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    border-color: white;
+}
+
 @media (max-width: 1024px) {
 
     .triple-grid,
