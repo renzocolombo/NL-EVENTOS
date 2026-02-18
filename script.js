@@ -69,6 +69,5 @@ if (contactForm) {
         // pero podemos mostrar un aviso.
         alert('Se abrirá tu gestor de correo para enviar la consulta. ¡Gracias!');
         // No prevenimos el default para que se dispare el mailto, 
-        // a menos que sea un sistema de backend real.
     });
 }
