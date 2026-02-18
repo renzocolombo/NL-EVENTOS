@@ -75,6 +75,9 @@ if (contactForm) {
 
         const formData = new FormData(contactForm);
 
+        // Dynamic subject to avoid Gmail threading
+        const clientName = formData.get('nombre') || 'Cliente';
+        formData.append('_subject', `Nueva Consulta de ${clientName} - NL Eventos`);
         try {
             const response = await fetch(contactForm.action, {
                 method: 'POST',
