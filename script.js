@@ -75,9 +75,10 @@ if (contactForm) {
 
         const formData = new FormData(contactForm);
 
-        // Dynamic subject to avoid Gmail threading
+        // Dynamic subject to avoid Gmail threading (with timestamp for uniqueness)
         const clientName = formData.get('nombre') || 'Cliente';
-        formData.append('_subject', `Nueva Consulta de ${clientName} - NL Eventos`);
+        const time = new Date().toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        formData.append('_subject', `Nueva Consulta: ${clientName} (${time}) - NL Eventos`);
         try {
             const response = await fetch(contactForm.action, {
                 method: 'POST',
