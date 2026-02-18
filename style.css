@@ -451,6 +451,41 @@ header.scrolled .logo img {
     font-family: var(--font-body);
 }
 
+/* Date Input Placeholder Hack */
+.date-input {
+    position: relative;
+    color: white;
+}
+
+.date-input:before {
+    content: "Fecha del evento";
+    position: absolute;
+    color: var(--text-secondary);
+    pointer-events: none;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.date-input:focus:before,
+.date-input:valid:before {
+    display: none;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.date-input::-webkit-datetime-edit {
+    color: transparent;
+}
+
+.date-input:focus::-webkit-datetime-edit,
+.date-input:valid::-webkit-datetime-edit {
+    color: white;
+}
+
 .form-group textarea {
     height: 150px;
     resize: none;
