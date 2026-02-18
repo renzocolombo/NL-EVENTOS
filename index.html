@@ -275,16 +275,15 @@
                         </div>
                     </div>
 
-                    <form class="contact-form reveal" action="mailto:nl79eventos@gmail.com" method="post"
-                        enctype="text/plain">
+                    <form class="contact-form reveal" action="https://formspree.io/f/xojnlwdo" method="POST">
                         <div class="form-group">
-                            <input type="text" placeholder="Nombre completo" required>
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" placeholder="Teléfono" required>
+                            <input type="tel" name="telefono" placeholder="Teléfono" required>
                         </div>
                         <div class="form-group">
-                            <select required>
+                            <select name="tipo_evento" required>
                                 <option value="" disabled selected>Tipo de evento</option>
                                 <option>Social (Boda/15 años)</option>
                                 <option>Corporativo</option>
@@ -293,10 +292,10 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Fecha del evento" onfocus="(this.type='date')">
+                            <input type="text" name="fecha" placeholder="Fecha del evento" onfocus="(this.type='date')">
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Tu mensaje"></textarea>
+                            <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                     </form>
