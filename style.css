@@ -523,12 +523,13 @@ footer {
     border-radius: 12px;
     font-size: 1.6rem;
     transition: var(--transition-smooth);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: -2px 0 5px rgba(238, 29, 82, 0.5), 2px 0 5px rgba(105, 201, 208, 0.5);
 }
 
 .tiktok-link:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    box-shadow: -3px 0 12px rgba(238, 29, 82, 0.8), 3px 0 12px rgba(105, 201, 208, 0.8);
     border-color: white;
 }
 
