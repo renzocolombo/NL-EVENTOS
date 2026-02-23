@@ -424,8 +424,8 @@ header.scrolled .logo img {
 
 /* Contact Section */
 .contact-section {
-    padding: 60px 0;
-    /* Reducido de 100px */
+    padding: 120px 0 60px 0;
+    /* Aumentado padding superior de 60px a 120px para bajar la sección */
 }
 
 .contact-grid {
