@@ -424,26 +424,30 @@ header.scrolled .logo img {
 
 /* Contact Section */
 .contact-section {
-    padding: 100px 0;
+    padding: 60px 0;
+    /* Reducido de 100px */
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 40px;
+    /* Reducido de 80px */
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
+    /* Reducido de 20px */
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 15px;
+    padding: 12px;
+    /* Reducido de 15px */
     background: var(--bg-surface);
     border: 1px solid var(--border-color);
     color: white;
@@ -487,7 +491,8 @@ header.scrolled .logo img {
 }
 
 .form-group textarea {
-    height: 150px;
+    height: 100px;
+    /* Reducido de 150px */
     resize: none;
 }
 
